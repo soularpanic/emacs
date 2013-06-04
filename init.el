@@ -1,3 +1,16 @@
+;; fix the PATH variable
+;; (defun set-exec-path-from-shell-PATH ()
+;;   (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
+;;     (setenv "PATH" path-from-shell)
+;;     (setq exec-path (split-string path-from-shell path-separator))))
+
+;; (when window-system (set-exec-path-from-shell-PATH))
+(package-initialize)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -5,11 +18,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (wheatgrass)))
  '(ido-mode (quote both) nil (ido))
- '(package-archives (quote (
-   ("gnu" . "http://elpa.gnu.org/packages/")
-   ("marmalade" . "http://marmalade-repo.org/packages/")
-   ("mepla" . "http://melpa.milkbox.net/packages/"))))
+ '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/") ("mepla" . "http://melpa.milkbox.net/packages/"))))
  '(tool-bar-mode nil))
+
 
 
 (custom-set-faces

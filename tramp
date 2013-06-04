@@ -1,29 +1,5 @@
-;; -*- emacs-lisp -*- <13/05/23 10:15:43 /Users/soularpanic/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <13/06/04 16:48:25 /Users/soularpanic/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-((["ssh" "root" "50.116.47.117" nil]
-  ("uname" "Linux 3.9.2-x86_64-linode32")
-  ("test" "test")
-  ("remote-path"
-   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
-  ("remote-shell" "/bin/sh")
-  ("busybox" nil)
-  ("~" "/root")
-  ("perl-file-spec" t)
-  ("perl-cwd-realpath" t)
-  ("perl" "\\perl")
-  ("stat" "\\stat")
-  ("file-exists" "test -e")
-  ("id" "/usr/bin/id")
-  ("gid-integer" 0)
-  ("ls" "/bin/ls --color=never")
-  ("ls-dired" t)
-  ("readlink" "\\readlink")
-  ("local-encoding" base64-encode-region)
-  ("local-decoding" base64-decode-region)
-  ("remote-encoding" "base64")
-  ("remote-decoding" "base64 -d -i")
-  ("uid-integer" 0)
-  ("inline-compress" "gzip")
-  ("inline-decompress" "gzip -d")))
+(nil)
