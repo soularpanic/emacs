@@ -10,6 +10,7 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+(load "~/.emacs.d/nxhtml/autostart.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
